@@ -12,14 +12,14 @@ gitでのデーターベースの共有方法がわからなかったので構�
 データーベースの構成
 
 mydb/post
-	#	名前        データ型        照合順序            属性    NULL    デフォルト値    その他              コメント	
-	1	id         int(11)			                        いいえ   なし		    AUTO_INCREMENT     主キーです
-	2	userid     int(11)			                        いいえ   なし			                   usersのidとリレーションしてます
-	3	title	   varchar(255)   utf8_general_ci		    はい	 NULL			 	              投稿タイトルです
-	4	contents   varchar(255)	  utf8_general_ci		    はい	 NULL			 	              投稿内容ですです
-	5	time        timestamp			                    いいえ	 CURRENT_TIMESTAMP                投稿の時間を記録してます
+	#	名前        データ型         照合順序            属性    NULL     デフォルト値    その他             コメント	
+	1	id         int(11)                                   いいえ    なし          AUTO_INCREMENT    主キーです
+	2	userid     int(11)                                   いいえ    なし                            usersのidとリレーションしてます
+	3	title	   varchar(255)    utf8_general_ci           はい      NULL                           投稿タイトルです
+	4	contents   varchar(255)	   utf8_general_ci           はい	     NULL                           投稿内容ですです
+	5	time       timestamp                                 いいえ    CURRENT_TIMESTAMP              投稿の時間を記録してます
 mydb/users
-    #	名前        データ型        照合順序            属性    NULL    デフォルト値    その他              　コメント
-	1	id	        int(11)			                        いいえ	 なし		    AUTO_INCREMENT      主キーです
-	2	email	    varchar(255)  utf8_general_ci		    いいえ	 なし                               登録のemail
-	3	password	varchar(255)  utf8_general_ci		    いいえ	 なし                               暗号化されたパスワード
+	#	名前         データ型          照合順序            属性    NULL    デフォルト値    その他             コメント
+	1	id          int(11)                                   いいえ    なし          AUTO_INCREMENT    主キーです
+	2	email	    varchar(255)    utf8_general_ci           いいえ    なし                            登録のemail
+	3	password    varchar(255)    utf8_general_ci           いいえ    なし                            暗号化されたパスワード
