@@ -23,3 +23,4 @@ mydb/users
 	1	id          int(11)                                   いいえ    なし          AUTO_INCREMENT    主キーです
 	2	email	    varchar(255)    utf8_general_ci           いいえ    なし                            登録のemail
 	3	password    varchar(255)    utf8_general_ci           いいえ    なし                            暗号化されたパスワード
+	
